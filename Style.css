@@ -24,17 +24,19 @@ header {
   top: 25px;
   right: 0%;
   z-index: 100;
-  justify-content: space-between;
   align-items: right;
   transition: all 0.5s ease;
 }
 
 .navbar {
   display: flex;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  /*top: 0; Position the navbar at the top of the page */
 }
 .navbar a {
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 150;
   color: #272044;
   padding: 3px 0;
   margin: 0px 30px;
@@ -71,6 +73,8 @@ button {
   font-size: 13px;
   padding: 15px 20px;
   border-radius: 18px;
+  border: palevioletred;
+  cursor: pointer;
   transition: all 200ms ease-in-out;
 }
 
@@ -79,7 +83,7 @@ button {
 }
 
 .about .about-content .button-74:active {
-  box-shadow: #422800 2px 2px 0 0;
+  /*box-shadow: #422800 2px 2px 0 0;*/
   transform: translate(2px, 2px);
 }
 
@@ -274,25 +278,25 @@ ul.a {
 }
 /* projects section styling */
 .services {
-  color: black;
+  color: #272044;
   /*background: rgb(250, 209, 255);*/
 }
-.container {
-  display: flex;
-}
+
 .card {
+  display: flex;
   background: palevioletred;
   border-radius: 20px;
   padding: 50px 25px;
   justify-content: space-between;
   margin-left: 10px;
+  margin-bottom: 20px;
   height: 200px;
   flex: 1;
   transition: 0.3s all ease;
   font-size: 14px;
-  font-weight: 250;
+  font-weight: 150;
   margin: 10px 0 7px 0;
-  width: 200px;
+  width: 170px;
   text-align: center;
 }
 .card:hover {
@@ -398,17 +402,55 @@ ul.a {
 
 /* footer section styling */
 footer {
-  background: white;
-  padding: 15px 23px;
-  color: black;
+  padding: 40px 0;
+  background-color: #ffffff;
+  color: #4b4c4d;
+}
+
+footer ul {
+  padding: 0;
+  list-style: none;
   text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
 }
-footer span a {
-  color: crimson;
+
+footer li {
+  padding: 0 10px;
+}
+
+footer ul a {
+  color: inherit;
   text-decoration: none;
+  opacity: 0.8;
 }
-footer span a:hover {
-  text-decoration: underline;
+
+footer ul a:hover {
+  opacity: 1;
+}
+
+footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+footer .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+footer .social > a:hover {
+  opacity: 0.9;
 }
 
 /* responsive media query start */
@@ -474,7 +516,8 @@ footer span a:hover {
     font-size: 20px;
   }
   .services .serv-content .card {
-    width: 100%;
+    width: 70%;
+    justify-content: space-between;
   }
 }
 
