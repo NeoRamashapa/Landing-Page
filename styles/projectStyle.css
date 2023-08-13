@@ -1,0 +1,41 @@
+:root {
+  --branding-color: #6c63ff;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+  --secondary-color: #f9f7fe;
+  --text-color: #272044;
+}
+body {
+  color: var(--text-color);
+  padding: 10px 20px;
+}
+
+.logo {
+  max-width: 50px;
+}
+nav {
+  padding: 20px 0;
+}
+nav li {
+  list-style: none;
+  display: inline;
+  line-height: 42px;
+  margin-left: 15px;
+  font-size: 13px;
+}
+nav li.active a,
+nav a:hover {
+  color: var(--branding-color);
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+h1 {
+  text-align: center;
+}

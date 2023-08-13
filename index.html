@@ -6,10 +6,30 @@
     <title>
       Neo Ramashapa's Landing Page
     </title>
-    <link rel="stylesheet" href="Style.css">
+    <script
+      src="https://kit.fontawesome.com/0cc500e924.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/styles/Style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-   
+   <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Noto+Serif+Sinhala:wght@200;300&family=Playfair+Display&family=Playfair:wght@500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,300;1,500;1,600&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -44,26 +64,25 @@
     
     <ul class="navbar">
       <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Projects</a>
+      <a href="/About-Me.html">About</a>
+      <a href="/projects.html">Projects</a>
       <a href="Neo Ramashapas CV.pdf" download>CV</a>
-      <a href="#contact">Contact Me</a>
+      <a href="/Contact-Me.html">Contact </a>
       
     </ul>
 
   </header>
   <!--HOME-->
-  <section class="home" id="home">
-    <div class="max-width">
-      <div class="home-content">
-        <div class="text-1">Hello 👋, I'm</div>
-        <div class="text-2">Neo Ramashapa</div>
-        <div class="text-3">I'm an Aspiring Software Developer & Data Analyst </div>
-     
-      </div>
-    </div>
-  </section>
- 
+  
+ <div class="container">
+  <div class="home">
+    <p>Hello 👋 , I am</p>
+    <h1>
+      Neo Ramashapa - 
+    </h1>
+<h2 class="mt-5">A Junior Software Developer</h2>
+  </div>
+ </div>
 <!--About-->
   <section class="about" id="about">
     <div class="max-width">
@@ -74,12 +93,14 @@
         </div>
         <div class="column right">
           <!--<div class="text">Software Development Graduate</div>-->
-          <p>A passionate and talented graduate developer with a strong academic background and a desire to make a meaningful impact in the software development field. 
-             </p>
-             <p>I am now seeking a software development opportunity where 
-I can collaborate with a team of experts and expand my technical expertise. I hold a National Diploma in Information Technology - Software Development from Nelson Mandela University</p>
-         <!-- <a href="Feb-Resume.pdf"><button class="bn29">View CV</button></a>.-->
-        </div>
+          <p>A passionate and talented graduate developer with a strong academic background and a desire to make a
+             meaningful impact in the software development field. 
+            <br/> </p>
+               <div class="button">
+            <a href="About-Me.html" class="btn  btn-readMore">Read More</a>
+          </div>
+            </p>
+              </div>
       </div>
     </div>
   </section>
@@ -101,71 +122,43 @@ I can collaborate with a team of experts and expand my technical expertise. I ho
 
   <!--Projects-->
   <section class="services" id="services">
-     <h2 class="title">Projects</h2>
+    <a href="/projects.html"> <h2 class="title">Projects</h2></a>
+   
        <div class="cont">
-            
-      <div class="vard">
+            <div class="vard">
         <br/>
-      <h3>Weather-App</h3>
+     <h3>Learner Management System</h3>
         <p>
-          I used an API to get live data for a weather report. </p>
+        Final year project - Built using Asp.net 6.0   (C#, HTML, Css, JavaScript & some jQuery)
+        </p>
+      </div>  
+      <div class="vard ">
+        <br/>
+      <h3 class="mb-2">Weather-App</h3>
+        <p>
+        Built using HTML, CSS, JavaScript & an API to get live weather data </p>
       </div>
       <div class="vard">
         <br/>
-      <h3>Portfolio Website</h3>
-         <p>This was done using CSS & HTML</p>
+      <h3 class="mb-2">Portfolio Website</h3>
+         <p>Built using CSS , HTML and JavaScript</p>
       </div>
       <div class="vard">
         <br/>
-     <h3>To - do List</h3>
+     <h3 class="mb-2 mt-5">Personal Blog</h3>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-          
+         Built using HTML, CSS, JS and React
         </p>
       </div>
-      <div class="vard">
-        <br/>
-     <h3>Demo App - 1</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-          
-        </p>
-      </div>
+    
     </div>
-    <div class="cont">
-            
-      <div class="vard">
-        <br/>
-      <h3>Demo App - 2</h3>
-        <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-      </div>
-      <div class="vard">
-        <br/>
-      <h3>Demo App - 3</h3>
-         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="vard">
-        <br/>
-      <h3>Demo App - 4</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.          
-        </p>
-      </div>
-      <div class="vard">
-        <br/>
-      <h3>Demo App - 5</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.  
-        </p>
-      </div>
-    </div>
+    
 </section>
 
  <!-- contact section start -->
  <section class="contact" id="contact">
   <div class="max-width">
-      <h2 class="title">Contact me</h2>
+      <h2 class="title">Lets Connect !</h2>
       <div class="contact-content">
           <div class="column left">
               <div class="icons">
@@ -211,13 +204,20 @@ I can collaborate with a team of experts and expand my technical expertise. I ho
   
   </section>
   
- <footer>
-      <div class="social">
-        <a href="https://www.linkedin.com/in/neo-ramashapa-a7b57319b"><i class="icon ion-social-linkedin"></i></a>
-        <a href="https://github.com/NeoRamashapa"><i class="icon ion-social-github"></i></a>
-      </div>
-         
-  </footer>
+   <footer>
+        
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://github.com/NeoRamashapa?tab=overview&from=2023-07-01&to=2023-07-29" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/neo-ramashapa-a7b57319b/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.tiktok.com/login/phone-or-email/email" target="_blank">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+      </footer>
 <script src="script.js"></script>
 </body>
 </html>
